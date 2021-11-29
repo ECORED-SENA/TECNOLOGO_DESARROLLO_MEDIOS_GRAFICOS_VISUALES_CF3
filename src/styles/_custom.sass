@@ -23,7 +23,7 @@ figcaption
 .bg-elemento
   background-image: url(../assets/curso/bg-elemento.png)
   background-repeat: no-repeat
-  background-size: 100% 75%
+  background-size: 100% 85%
   background-position: bottom  
 
 
@@ -75,3 +75,62 @@ figcaption
 
 .cajon.color-primario 
   background-color: #FFD1A2
+
+.cajon2  
+  position: relative
+.cajon2.color-primario.personalizado
+  background-color: transparent 
+.cajon2.personalizado:after
+  background-color: #ffa726
+  content: ""
+  display: block
+  width: 25px
+  height: 10px
+  position: absolute
+  top: 0
+  left: 0
+.cajon2.personalizado:before  
+  background-color: #ffe8c8
+  content: ''
+  display: block
+  position: absolute
+  top: 40% !important
+  bottom: 0 !important
+  left: 35% !important
+  right: 0
+
+
+.slyder-a__tipo-a .slyder-a__bullets
+  bottom: 20px  
+.slyder-a__bullets__item--active
+  background-color: #F57C00 !important
+  border-color: #F57C00 !important
+.slyder-a__bullets__item
+  background-color: #AF9627
+  border-color: #AF9627
+.slyder-a__btn--sigt, .slyder-a__btn--atrs
+  opacity: 1
+  border: 2px solid #12263F
+.slyder-a__btn--sigt:hover, .slyder-a__btn--atrs:hover
+  border-color: #12263F
+
+
+.tarjeta3 .tarjeta-numerada__numero
+  width: 40px
+  height: 40px
+  top: 35px
+.tarjeta3 img
+  width: 85px
+  height: 80px
+.tarjeta3.tarjeta-numerada.color-acento-contenido
+  background-color: #B1F9FF
+  border-color: #B1F9FF
+
+
+
+
+
+
+@media (max-width: $bp-max-md)
+  .bg-elemento
+    background-color: #fff3bf

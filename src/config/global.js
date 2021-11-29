@@ -116,6 +116,13 @@ export default {
         titulo: 'Aplicación de normas técnicas',
         desarrolloContenidos: true,
       },
+      {
+        nombreRuta: 'sintesis',
+        icono: 'far fa-file-alt',
+        numero: '',
+        titulo: 'Síntesis',
+        desarrolloContenidos: true,
+      },
     ],
     subMenu: [
       {

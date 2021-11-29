@@ -128,10 +128,145 @@
               p Es el principal dispositivo para el diseño de gestión de colores, cabe mencionar que impresoras, escáner, cámaras, planchas, son alternativas que se tienen, pero nada mejor a la hora de realizar este proceso mediante una pantalla o monitor, en lo posible una pantalla con buena calidad de resolución y calibrada, para que el registro de color sea lo suficientemente de calidad a la hora de iniciar un proceso digital. Hoy en día la tecnología brinda la posibilidad de encontrar monitores de alta resolución a bajos costos; y la implementación de programas de diseño avanzados, como por ejemplo los programas de la casa adobe company, un ejemplo es Photoshop, Illustrator, Indesing, lightroon, etc.
             .col-md-6
               figure
-                img(src='@/assets/curso/tema1-1-slide4.png', alt='Pantalla')                
+                img(src='@/assets/curso/tema1-1-slide4.png', alt='Pantalla')     
+          .row
+            .col-md-6.mb-4.mb-md-0
+              h3 Iluminación
+              p Otro aspecto importante a tener presente es la incidencia de la iluminación, es tener una iluminación óptima en el lugar de trabajo es fundamental a la hora de trabajar, una iluminación cerca al entorno del monitor se sugiere que sea neutra, que no hayan colores dominantes, sin reflejos ni colores directos hacia la pantalla.  
+            .col-md-6
+              figure
+                img(src='@/assets/curso/tema1-1-slide5.png', alt='Iluminación')            
+          .row
+            .col-md-6.mb-4.mb-md-0
+              h3 Impresora
+              p Este dispositivo es muy importante a la hora de la gestión de color, ya que permite analizar el color a partir de pruebas físicas, así como el monitor, es importante que la impresora cuente con unas características avanzadas es su calidad de impresión, para así poder obtener unas tonalidades y colores acordes a lo que se quiere en un proceso digital. Las características de las impresoras varían según la marca y referencia. Para la realización de pruebas de color se recomienda tener un proveedor con impresoras calibradas y de buena calidad tonal.  
+            .col-md-6
+              figure
+                img(src='@/assets/curso/tema1-1-slide6.png', alt='Impresora') 
+          .row
+            .col-md-6.mb-4.mb-md-0
+              h3 Tintas
+              p Para la realización de pruebas de color, el rango tonal se sugiere mayor al dispositivo final en el cual se va a realizar la impresión, un ejemplo de esto es la rotativa o la impresora en la que se va a realizar la impresión, es prescindible analizar la maquina que se va a utilizar ya que si tiene un nivel tonal rojo más brillante que un tóner o tinta, no se deben hacer las pruebas de color.  
+            .col-md-6
+              figure
+                img(src='@/assets/curso/tema1-1-slide7.png', alt='Tintas') 
+          .row
+            .col-md-6.mb-4.mb-md-0
+              h3 Papel 
+              p El sustrato a utilizar en la impresión es crucial para unos resultados óptimos, para las pruebas de color se puede escoger el mismo papel en el cual se va a imprimir el producto, esto con el fin de identificar el resultado final. El rango tonal y el gamut debe ser más amplio o igual al de la impresora, tintas y papel. No se recomienda hacer pruebas de color en papeles de impresoras donde el tono base sea más oscuro en relación con el que se va a imprimir el producto final, el resultado en la prueba de color seria diferente al resultado final. Hoy en día existe la posibilidad de escoger entre las variedades del papeles que hay en el mercado y escoger a criterio propio un papel homogéneo y uniforme.
+            .col-md-6
+              figure
+                img(src='@/assets/curso/tema1-1-slide8.png', alt='Papel') 
+          .row
+            .col-md-6.mb-4.mb-md-0
+              h3 Calibrador
+              p Este es un procedimiento que se debe realizar constantemente en los dispositivos tanto  digitales y análogos, calibrar es importante para mantener los dispositivos óptimos. Para estos procesos de calibración se deben tener a la mano un colorímetro, que permite calibrar el color transmitido por la pantalla y por otra parte está el espectrofotómetros, que ayudan a medir el color de un monitor y el reflejo en papeles, y también tiene como funcionalidad crear perfiles de impresoras y otras máquinas. Es decir que los espectrofotómetros son más avanzados que los colorímetros.
+            .col-md-6
+              figure
+                img(src='@/assets/curso/tema1-1-slide9.png', alt='Calibrador')                                 
+
+    Separador
 
 
+    // 1.2
+    #t_1_2.titulo-segundo.color-acento-contenido(data-aos="fade-right")
+      .h2 1.2  El color en impresos
 
+    .row
+      .col-md-5.mb-4(data-aos="fade-right")
+        .cajon2.color-primario.personalizado.px-md-5.py-md-0.p-4
+          .bloque-texto-b__texto
+            h4.mb-0 El uso del color en impresos se genera a partir del modelo de color CMYK: Cyan, Magenta, Yellow y Key, que traducido significa cian, magenta, amarillo y color clave/negro, se eligió la letra K para diferenciarse del color azul (Blue) y no generar confusiones.      
+      .col-md-7.mb-4(data-aos="fade-left")
+        p En medios impresos el proceso de creación pasa por varias etapas como el diseño, preprensa, impresión y terminados, entre otros; en los cuales se hace un seguimiento íntegro al producto sobre todo antes del proceso de la impresión, ya que una vez el diseño está impreso sobre el sustrato, es imposible realizar correcciones de última hora, caso contrario pasa con los productos digitales que permiten realizar actualizaciones en cualquier momento. 
+
+    .row.mb-4
+      .col-md-7.mb-4(data-aos="fade-right")
+        p El proceso de impresión empieza con la técnica de 
+          strong la cuatricromía que hace referencia a la utilización de cuatro tintas (CMYK), 
+          | que al ser mezcladas generan infinidad de colores, que adquieren profundidad al ser superpuestos y finalizan con la definición que genera el color negro sobre las otras tintas, generando en el papel casi el 70 % de los colores visibles al ojo humano. Actualmente es el sistema estándar utilizado principalmente en impresión offset. La mezcla generada se denomina sustractiva, ya que los colores de base impresos en una hoja en blanco funcionan como un filtro. La luz atraviesa el primer color y la tinta absorbe parte de esta. La luz restante atraviesa el segundo color y, una vez más, la tinta absorbe parte de esa luz.
+      .col-md-5.mb-4(data-aos="fade-left")
+        img(src='@/assets/curso/tema1-2-img.png', alt='Imagen decorativa')    
+
+    .row.justify-content-center.mb-4(data-aos="fade-down") 
+      .col-md-10
+        .cajon.color-primario.p-4
+          p.mb-0 Los inconvenientes generados por la mala aplicación del color por lo general se deben principalmente al tipo de papel o sustrato en el cual se va a imprimir, la calidad de las tintas que son utilizadas en el proceso de impresión, el tipo de sistema e impresora, la calidad de los cartuchos y en la gran mayoría de los casos la calibración del monitor que afecta directamente en cómo percibimos el color y su calidad, ya que muchas veces lo que vemos en pantalla no es lo que obtenemos en la impresión. 
+
+    p.mb-4(data-aos="fade") Por ejemplo, un papel rojo absorbería todas las longitudes de ondas excepto las del color rojo, que sería enviada de nuevo a la atmósfera y percibida por el ojo humano. La síntesis sustractiva, al ser de colores reflejados, necesita luz blanca para su creación. Continuando con el ejemplo, el papel rojo es rojo porque incide la luz sobre él, pero si se apaga la luz desaparece el color y se ve negro (ausencia de color). El blanco es el resultado de la reflexión de toda la luz. El papel blanco es blanco porque refleja toda la luz.
+
+    .row(data-aos="fade-down") 
+      .col-lg-3.col-md-6.text-center
+        img(src='@/assets/curso/tema1-2-C.png', alt='C') 
+        h1.bg-suave.py-2 C
+      .col-lg-3.col-md-6.text-center
+        img(src='@/assets/curso/tema1-2-M.png', alt='M') 
+        h1.bg-suave.py-2 M
+      .col-lg-3.col-md-6.text-center
+        img(src='@/assets/curso/tema1-2-Y.png', alt='Y') 
+        h1.bg-suave.py-2 Y
+      .col-lg-3.col-md-6.text-center
+        img(src='@/assets/curso/tema1-2-K.png', alt='K') 
+        h1.bg-suave.py-2 K      
+
+    p(data-aos="fade") Es importante considerar que el papel se asimila a un reflector de luz; es decir, si es blanco, refleja todos los colores, por eso se percibe blanco, se hace importante poder controlar selectivamente los colores reflejados por el papel. Esta manera de control está a cargo de las tintas de imprenta, donde las tintas absorben luz; de esta forma se podrá utilizar para controlar la luz reflejada en el papel.
+
+    Separador
+
+
+    // 1.3
+    #t_1_3.titulo-segundo.color-acento-contenido(data-aos="fade-right")
+      .h2 1.3   Aplicación de modelos de color
+
+    p.mb-4(data-aos="fade") Los modelos de color sirven para clasificar y definir los colores, veamos este tema con mayor detalle a continuación:
+
+    .tarjeta.bg-secundario.mb-5(data-aos="fade-down")
+      SlyderA.py-5.px-md-0.px-4
+        .row.justify-content-center
+          .col-md-5.mb-4.mb-md-0
+            h2 Aplicación de modelos de color
+            h4 ¿Para qué sirven?
+            p Los modelos de color sirven para clasificar y definir los colores, mediante fórmulas matemáticas que  representan  a los colores de forma numérica, por ejemplo:  
+          .col-md-5
+            figure
+              img(src='@/assets/curso/tema1-3-slide1.jpg', alt='Aplicación de modelos de color')
+        .row.justify-content-center
+          .col-md-5.mb-4.mb-md-0
+            h4 ¿Qué modelos hay?
+            p Dentro de los principales modelos de color se encuentran:
+            h4.mb-0 CMYK
+            p Cyan, Magenta, Yellow y Key.
+          .col-md-5
+            figure
+              img(src='@/assets/curso/tema1-3-slide2.jpg', alt='CMYK')  
+        .row.justify-content-center
+          .col-md-5.mb-4.mb-md-0
+            h4 RGB
+            p (millones de colores), es un modelo basado en la síntesis de color aditiva, lo cual significa que por medio de adición de luz (roja, verde y azul), se generan los diferentes colores que al ser  sobrexpuestos generan el color blanco. Este tipo de modelo es utilizado en pantallas, proyectores, monitores, es por eso que el monitor del computador debe estar bien calibrado, pues de esto dependerá entre otras cosas, que el color de cualquier producto final sea el requerido. 
+            p Cabe mencionar que los colores utilizados en impresión del modelo (CMYK), se ven totalmente diferentes a los que se observan en la pantalla de su computador (RGB), por tal razón es muy importante convertir los archivos. 
+          .col-md-5
+            figure
+              img(src='@/assets/curso/tema1-3-slide3.jpg', alt='RGB')
+        .row.justify-content-center
+          .col-md-5.mb-4.mb-md-0
+            h4 LAB
+            p el modo de color LAB, se basa en la medida del componente lumínico que es medido de 0 a 100. Este modo de color es el que más se aproxima a la percepción visual, el color Lab consta de un componente de luminancia o luminosidad (L) y dos componentes cromáticos, el componente a (del verde al rojo) y el componente b (del azul al amarillo). Modelo Lab. A. Luminancia=100 (blanco) B. Componente verde a rojo C. Componente azul a amarillo D. Luminancia=0 (negro).
+          .col-md-5
+            figure
+              img(src='@/assets/curso/tema1-3-slide4.jpg', alt='LAB')                
+
+    .row.bg-elemento.justify-content-center.py-2.align-items-end.mb-5(data-aos="fade-down") 
+      .col-lg-2.col-md-3.col-5.mb-4.mb-md-0
+        img.px-md-3(src='@/assets/curso/tema1-3-ico.svg', alt='Icono decorativo')
+      .col-lg-8.col-md-9
+        .row.align-items-center
+          .col-lg-10.col-md-8.mb-3.mb-md-0
+            h4.mb-md-1 Modelos de color
+            p.mb-md-1 Para reforzar y profundizar sus conceptos en este tema, lo invitamos a ver el siguiente video, recuerde que también se encuentra disponible en el material complementario:
+          .col-lg-1.col-md-1
+            a.boton.color-acento-botones.me-3(href="https://www.youtube.com/watch?v=r_omt3DDwDU" target="_blank" type="application/pdf")
+              span Descargar
+              i.fas.fa-file-download 
 
 
 

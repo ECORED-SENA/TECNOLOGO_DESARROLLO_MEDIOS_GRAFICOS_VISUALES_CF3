@@ -44,6 +44,12 @@ const router = new VueRouter({
           component: () =>
             import(/* webpackChunkName: "tema3" */ '../views/Tema3.vue'),
         },
+        {
+          path: '/sintesis',
+          name: 'sintesis',
+          component: () =>
+            import(/* webpackChunkName: "sintesis" */ '../views/Sintesis.vue'),
+        },
       ],
     },
     {
