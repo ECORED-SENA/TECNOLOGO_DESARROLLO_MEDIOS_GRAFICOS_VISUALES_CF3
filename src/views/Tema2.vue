@@ -461,8 +461,64 @@
 
     p.mb-4(data-aos="fade") El valor tonal es la cantidad de luz y sombra que puede reflejar una superficie, estas producen las luces y sombras de la escala de grises que van de mezclas básicas entre el blanco y el negro, teniendo entre 10, 20 o más valores tonales entre ambos colores. Veamos con mayor profundidad este tema:
 
+    ImagenInfograficaB.color-primario.mb-5
+      template(v-slot:imagen)
+        figure
+          img(src='@/assets/curso/tema2-8-infografia.svg', alt='Texto que describa la imagen')
 
-
+      .row.bg-suave.justify-content-center.p-4(x="29%" y="27%" tooltip="Clic para ver más" numero="1")
+        .col-md-7
+          h4 Valor tonal
+          p La escala de valor tonal tiene en un extremo el blanco y en el otro se encuentra el negro, mezclando los dos, se obtiene una variada escala de grises, tonos acromáticos. Aquí, se tiene cuatro posibilidades de mezclar pigmentos para controlar el valor de los tonos, esto es: 
+          ul.lista-ul--color.mb-3
+            li.mb-0
+              i.fas.fa-chevron-right
+              p.mb-0 Agregando blanco, se aumenta el valor.
+            li.mb-0
+              i.fas.fa-chevron-right
+              p.mb-0 Agregando negro se disminuye el valor.
+            li.mb-0
+              i.fas.fa-chevron-right
+              p.mb-0 Agregando un gris contrastante, aumenta o disminuye el valor.
+            li.mb-0
+              i.fas.fa-chevron-right
+              p.mb-0 Agregando un pigmento de valor distinto, se aumenta o disminuye el valor.   
+          p No se puede cambiar el valor de un pigmento cromático sin modificar al mismo tiempo otras dimensiones tonales. Agregando negro, blanco o gris, se introduce un componente acromático.
+          p Los valores tonales construyen principalmente el contraste, los volúmenes de las formas y figuras, se construyen más a partir del valor tonal que de cualquier uso del color o la forma misma, recrean los objetos y permite diferenciar una circunferencia de un cubo, por ejemplo, a simple vista sin tocar la forma misma, su expresión pura es utilizada también en la pintura y el arte como herramienta principal para denotar infinitas situaciones. 
+        .col-md-5
+          img(src='@/assets/curso/tema2-8-modal1.svg', alt='Imagen decorativa')
+      .row.bg-suave.justify-content-center.p-4(x="39%" y="86%" tooltip="Clic para ver más" numero="2")
+        .col-md-6
+          h4 Balance de grises
+          p El ojo humano es capaz de producir por lo menos 16 millones de tonos; sin embargo, en los procesos de impresión solo se alcanzan a reproducir unos cuantos de miles. 
+          p El balance o equilibrio de grises es el primer paso para un control del color. El equilibrio de grises puede definirse como el método técnico para determinar que ningún componente cromático tiene predominancia sobre otros en el funcionamiento general de una síntesis o producción de color. 
+          p Este valor puede ser calibrado en la post impresión, pero también se puede denotar desde la calibración misma del monitor que utilizamos.
+        .col-md-6
+          img(src='@/assets/curso/tema2-8-modal2.svg', alt='Imagen decorativa')  
+        p Desde el punto de vista de la teoría, un perfecto equilibrio de grises se hallará cuando la suma de iguales partes de una tríada cromática genere un color acromático perfecto o sin desviaciones de matiz. Es decir, cuando sumando partes iguales de cian, magenta y amarillo, por ejemplo, dé un gris neutro. Este proceso se puede medir desde la parte inicial con la calibración del monitor, hasta el proceso final de la post impresión. Sin embargo, en imprenta es un proceso muy complejo por las transparencias generadas y la calidad de las tintas que no permiten un equilibrio en partes iguales. 
+      .row.bg-suave.justify-content-center.p-4(x="53%" y="53%" tooltip="Clic para ver más" numero="3")
+        .col-md-12
+          h4 ¿Cómo se mide el balance de grises?
+          p Es necesario tener un entorno cromático neutro, que cuente con una iluminación estándar con luz día para poder medir el balance de grises. Si no se cuenta con estos elementos, se producen efectos de metamerismo, que consiste en la percepción de las variaciones del color por parte del observador, según el color que rodee la muestra que se visualiza, o según el iluminante usado o los contrastes utilizados.
+          p Comparando el gris que se forma por la mezcla de tríadas acromáticas se llama gris cromático, con el gris que se forma al mezclar blanco y negro puros o gris acromático, se puede determinar y apreciar el balance equilibrado de grises. Si no se percibe así, debe bajarse la intensidad de los colores dominantes o subir la intensidad de los otros, por cuanto se pueden presentar ambos fenómenos.
+        .col-md-5
+          img(src='@/assets/curso/tema2-8-modal3.svg', alt='Imagen decorativa') 
+      .row.bg-suave.justify-content-center.p-4(x="83%" y="50%" tooltip="Clic para ver más" numero="4")
+        .col-md-12
+          h4 Tramado de imágenes
+          p Es necesario tener un entorno cromático neutro, que cuente con una iluminación estándar con luz día para poder medir el balance de grises. Si no se cuenta con estos elementos, se producen efectos de metamerismo, que consiste en la percepción de las variaciones del color por parte del observador, según el color que rodee la muestra que se visualiza, o según el iluminante usado o los contrastes utilizados.
+        .col-md-6
+          p Si observa una fotografía hecha en material fotográfico tradicional, podrá ver una imagen uniforme a pesar de que se examine detalladamente, pero si necesita reproducirla en un impreso, es imprescindible convertirla en un entramado de puntos diminutos, que no pueden verse a cierta distancia, pero generan en quien la observa una sensación de matices respecto al original. Al observar detenidamente los puntos del entramado diminuto, se puede inferir que en la mayor parte hay cuatro colores determinados, como son el amarillo, el negro, el magenta y el cian. Este proceso que va de la imagen fotográfica a la imagen impresa requiere dos procesos técnicos definidos que son:
+        .col-md-6
+          img(src='@/assets/curso/tema2-8-modal4.svg', alt='Imagen decorativa')  
+        .col-md-12  
+          ul.lista-ul--color.mb-3
+            li.mb-0
+              i.fas.fa-chevron-right
+              p.mb-0 Tramado de la imagen, que consiste en convertirla en un conjunto de puntos.
+            li.mb-0
+              i.fas.fa-chevron-right
+              p.mb-0 Separación de colores, que convierte cualquier matiz de la imagen en los componentes básicos de los colores que se utilizan en imprenta, negro, amarillo, cian y magenta.   
 
     p.mb-4(data-aos="fade") A continuación se identifican los distintos tipos de tramados que existen para la impresión, esto es:
 
