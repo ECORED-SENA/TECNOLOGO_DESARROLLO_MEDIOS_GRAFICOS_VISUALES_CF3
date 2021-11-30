@@ -146,8 +146,386 @@
 
     p.mb-4(data-aos="fade") La conversión del espacio de color es la traducción de la representación de un color de una base a otra. Esto ocurre típicamente en el contexto de la conversión de una imagen que se representa en un espacio de color a otro espacio de color, con el objetivo de hacer que la imagen traducida se vea lo más similar posible al original.
 
+    .row.mb-4
+      h2.text-center Diferentes espacios de color
+      .col-md-4.mb-4
+        .tarjeta.bg-suave.p-4
+          img.mb-4(src='@/assets/curso/tema2-2-A.jpg', alt='sRGB')
+          h3.text-center sRGB
+      .col-md-4.mb-4
+        .tarjeta.bg-suave.p-4
+          img.mb-4(src='@/assets/curso/tema2-2-B.jpg', alt='Adobe RGB')
+          h3.text-center Adobe RGB 
+      .col-md-4.mb-4
+        .tarjeta.bg-suave.p-4
+          img.mb-4(src='@/assets/curso/tema2-2-C.jpg', alt='CMYK')
+          h3.text-center CMYK 
 
+    
+    .titulo-tercero.titulo-tercero__2.mb-4(data-aos="fade-right")
+      h3.mb-0 Espacio de color absoluto
+      img(src='@/assets/curso/titulo-tercero.svg', alt='Imagen decorativa')
+
+    p.mb-5(data-aos="fade") Es una interpretación de color en un espacio que está definido colorimétricamente sin referencias a factores externos; es decir, un color es absoluto, cuando se define su relación exacta con 
+      strong colores rojo, verde y azul (RGB), 
+      | las cuales son las iniciales en inglés de 
+      italic-strong Red, Green y Blue. 
+      | Lo anterior significa que los espacios absolutos se miden exactamente con otras propiedades y valores RGB, que puedan considerarse absolutos como tal, donde se pueden encontrar espacios de color absolutos, pero deben ser referenciados y especificar puntos blancos para serlo. Para poder transformar un espacio de color RGB en un color absoluto, se define un perfil ICC (
+      italic Internacional Color Consortium
+      | ), representado por los perfiles ICC.
+
+
+    .titulo-tercero.titulo-tercero__3.mb-4(data-aos="fade-right")
+      h3.mb-0 Espacio de color del monitor RGB
+      img(src='@/assets/curso/titulo-tercero.svg', alt='Imagen decorativa')
+
+    p.mb-4(data-aos="fade") Los modelos de color basados en RGB se efectúan dependiendo el sistema utilizado; la implementación de 24 bits, limita a un rango de 256 x 256 x 256 x 16,7 millones de colores, lo que genera trabajar con espacios de color de alta gama, estos espacios se aplican a cualquier espacio de color basado en este modelo, pero se implementa en diferentes profundidades de bits. Algunos espacios de color basados en 
+      strong RGB 
+      | son el 
+      strong sRGB, Adobe RGB 
+      | y 
+      strong ProPhoto RGB, 
+      | los cuales podrá ver de una manera más detallada a continuación:
+
+    AcordionA.mb-5(tipo="a" clase-tarjeta="tarjeta bg-suave")
+      .row.justify-content-center(titulo="Espacio sRGB o estándar RGB")
+        .col-md-7.mb-4.mb-md-0
+          p Es el más común en pantallas y el que se encuentra en la gran mayoría de los monitores y dispositivos electrónicos, es el usado al momento de trabajar con elementos online, enviarlas por correo, editarlas, etc., todo lo contrario al momento de imprimirlas; especialmente creadas para su uso por internet y su compatibilidad. Es un espacio que ofrece una mayor saturación y mayor contraste que otros espacios, además su gama de color es un poco limitada frente a otras opciones, lo que hará que sea difícil ajustar tonalidades exactas. Dada su gran aceptación y su compatibilidad con la mayoría de los programas, es la más usada por los monitores de computadores, por su parte los monitores con gamas más altas deberán migrar a espacios más amplios como el 
+            italic-strong Adobe RGB.
+        .col-md-4
+          figure
+            img(src='@/assets/curso/tema2-2-acord1.jpg', alt='Espacio sRGB o estándar RGB')
+      .row.justify-content-center(titulo="Espacio Adobe RGB")
+        .col-md-7.mb-4.mb-md-0
+          p Uno de los más habituales actualmente, ya que a diferencia del anterior permite trabajar de una manera más profesional dada su alta gama; pensado principalmente para la edición de fotografías de forma profesional, por eso su nombre 
+            italic-strong AdobeRGB, 
+            | ya que fueron ellos los desarrolladores. Es un espacio que consigue reproducir prácticamente todos los colores CMYK que se puedan imprimir, consiguiendo de esa forma una reproducción más fiel a los colores.
+        .col-md-4
+          figure
+            img(src='@/assets/curso/tema2-2-acord2.jpg', alt='Espacio Adobe RGB')
+      .row.justify-content-center(titulo="Espacio ProPhoto")
+        .col-md-7.mb-4.mb-md-0
+          p Es el espacio más fiel a los colores reconocibles por el ojo humano y están compuestos en el 
+            italic gamut (Pointer gamut)
+            | , compatibles con las gamas más altas, pensado a nivel profesional perfeccionista, el gran inconveniente es que no existe una gama en ningún dispositivo electrónico que alcance esta gama por lo que no será posible distinguir estos colores, por su parte, existen impresoras que si pueden conseguir representaciones más fieles de esas gamas. Desarrollado por una de las casas más icónicas de fotografía como 
+            italic-strong Kodak, 
+            | abarca el 100 % de los colores reales perceptibles en el mundo y es el único capaz de representar estos colores como los reconoce el ojo humano. 
+        .col-md-4
+          figure
+            img(src='@/assets/curso/tema2-2-acord3.jpg', alt='Espacio ProPhoto')      
+
+
+    
+    .titulo-tercero.titulo-tercero__3.mb-4(data-aos="fade-right")
+      h3.mb-0 Espacio de color de dispositivos CMYK
+      img(src='@/assets/curso/titulo-tercero.svg', alt='Imagen decorativa')
+
+    p.mb-4(data-aos="fade") Se conocen como los colores secundarios, se denominan sustractivos, ya que sustraen colores de la luz blanca más no se combinan como en los RGB; solo los dispositivos como impresoras y fotocopiadoras utilizan una entrada CMY y convierten la información de RGB a CMY, transformando principalmente el blanco en negro y viceversa.
+
+    .row.justify-content-around
+      h2.mb-4.text-center Colores CMYK
+      .col-md-4
+        h3.mb-4.text-center Color aditivo
+        figure.mb-4
+          img(src='@/assets/curso/tema2-2-tarj1.png', alt='color aditivo')
+      .col-md-4
+        h3.mb-4.text-center Color sustractivo
+        figure.mb-4 
+          img(src='@/assets/curso/tema2-2-tarj2.png', alt='color sustractivo')
+
+    p.mb-4(data-aos="fade") El perfil de color 
+      span.etiqueta CMYK, está fundamentado en la sustracción del blanco, implementando para esto la mezcla de pigmentos, se denomina síntesis sustractiva.
+      |  Es importante entender que este modo de color se implementa para elementos gráficos que van a ser impresos sobre un sustrato. Las imágenes en CMYK poseen 32 
+      italic bits 
+      | por cada 
+      italic píxel, 
+      | utilizando cuatro canales de información, uno correspondiente a cada color. Relacionando el color RGB Y CMYK, en la práctica, cuando se necesita presentar un elemento grafico como por ejemplo una fotografía en un espacio de luz como un monitor, un teléfono inteligente, una 
+      italic tablet, 
+      | en la web o en un televisor se debe utilizar el modo de color RGB. Por otra parte, cuando se vaya a implementar cualquier formato de impresión, como una revista, un catálogo, un poster o un folleto, se deben utilizar el modelo CMYK, esto a razón que todas las máquinas de impresión están basadas en modos de color CMYK, ya sea impresión digital o impresión 
+      italic offset. 
+      | Enviar un archivo a impresión en el modo RGB ocasionará cambios en los colores finales.
+
+    .row.justify-content-around.mb-4
+      .col-md-4
+        h3.mb-4.text-center CMYK
+        figure.mb-4
+          img(src='@/assets/curso/tema2-2-tarj3.png', alt='CMYK')
+      .col-md-4.mb-4
+        h3.mb-4.text-center Colores primarios
+        figure.mb-5
+          img(src='@/assets/curso/tema2-2-tarj4.png', alt='Colores primarios')
+        h3.mb-4.text-center Colores secundarios
+        figure.mb-4 
+          img(src='@/assets/curso/tema2-2-tarj5.png', alt='Colores secundarios')
+
+
+
+    .titulo-tercero.titulo-tercero__3.mb-4(data-aos="fade-right")
+      h3.mb-0 Comparación entre espacios de color
+      img(src='@/assets/curso/titulo-tercero.svg', alt='Imagen decorativa')
+
+    p.mb-4(data-aos="fade") Existen diferentes espacios de color que representan las gamas que pueden llegar a representar los colores, por eso a continuación observará una comparación de cada uno donde podrá distinguir hasta donde alcanza el espacio tonal de cada espacio de color. Se hará una primera referencia al 
+      italic.etiqueta Pointer gamut
+      |  que es la escala que representa el 100 % de los colores que se pueden percibir:
+
+    .row.justify-content-center.mb-4
+      .col-md-8
+        SlyderF(columnas="col-12")
+          .row.p-4
+            .bg-suave2.mb-2.py-4
+              h2.text-center Pointer gamut
+              .row.justify-content-center
+                .col-8
+                  img(src='@/assets/curso/tema2-2-D.png' alt='Pointer gamut')
+            figcaption Nota. Tomado de upload.wikimedia.org/wikipedia/commons/b/b0/CIExy1931.png
+          .row.p-4
+            .bg-suave2.mb-2.py-4
+              h2.text-center Comparación de espacios de color
+              .row.justify-content-center
+                .col-8
+                  img(src='@/assets/curso/tema2-2-A.png' alt='Comparación de espacios de color')
+            figcaption Nota. Tomado de www.dzoom.org.es/wp-content/uploads/2021/03/espacios-de-color-espectro-visible-734x489.jpg  
+
+    p(data-aos="fade") En la segunda imagen, puede comparar los espacios de color, en ellos se contemplan las distancias de las gamas de color de cada uno de los espacios, cada uno con capacidades y limitaciones de color diferentes entre sí.
+
+    Separador
+
+
+    // 2.3
+    #t_2_3.titulo-segundo.color-acento-contenido(data-aos="fade-right")
+      .h2 2.3   Perfiles de entrada
+
+    p.mb-4(data-aos="fade") Un sistema de gestión de color emplea diferentes perfiles, lo que hará que los colores sean precisos al momento de pasar de un dispositivo o elemento a otro; estos perfiles ayudarán de forma correcta a que los dispositivos puedan realizar correcciones y no caer en fallos.
+
+    .row.justify-content-center(data-aos="fade-down")
+      .col-md-10.mb-4 
+        .cajon.color-primario.p-4
+          p.mb-0 Los perfiles de entrada son los perfiles de los distintos elementos que capturan o escanean un elemento, estos en su mayoría vienen en formatos <b>RGB</b> y <b>sRGB</b>, ya que vienen de fuentes de luz diferentes, entre estos podemos encontrar las cámaras digitales, escáneres, cámaras de teléfonos inteligentes, entre otros; estos perfiles son perfiles unidireccionales, puesto que no serán nunca un perfil o dispositivo de destino. Un perfil de entrada es siempre un perfil de origen por lo que solo existe una conversión.
+
+    p.mb-4(data-aos="fade") Hoy en día muchas cámaras permiten seleccionar el modo de color de entrada para la captura de imágenes como lo muestra la siguiente imagen, pero la mejor opción es RGB, ya que se consigue mayor gama cromática:
+
+    .row.justify-content-center
+      .col-md-7.bg-suave.p-md-4.p-3.mb-2
+        h2.text-center Modo de color cámara fotográfica
+        figure
+          img.px-md-5(src='@/assets/curso/tema2-3-img.png', alt='Modo de color cámara fotográfica')
+      .col-md-7.bg-color-primario2
+        figcaption Nota. Tomado de/www.dzoom.org.es/wp-content/uploads/2016/02/perfil-color_configuracion-camara-300x213.jpg
    
+    Separador
+
+
+    // 2.4
+    #t_2_4.titulo-segundo.color-acento-contenido(data-aos="fade-right")
+      .h2 2.4   Perfiles de salida
+
+    p.mb-4(data-aos="fade") Son la clase de perfiles que describe aparatos de reproducción impresa de imágenes como impresoras, prensas, rotativas y similares; es decir, los elementos de salida, a diferencia de los perfiles de origen, tienen la capacidad de ser tanto de origen, como de destino, dando la posibilidad de ser elementos que pueden ser 
+      strong.etiqueta RGB o CMYK,
+      |  donde se asignará al documento con condiciones de impresión determinadas para cada perfil. 
+
+    .row.tarjetas2-4
+      .col-md-4.mb-4
+        .tarjeta.bg-acento-botones.p-4
+          img.px-md-5.mb-4(src='@/assets/curso/tema2-4-tarj1.png', alt='CMYK')
+          h3.text-center CMYK
+      .col-md-4.mb-4
+        .tarjeta.bg-acento-botones.p-4
+          img.px-md-5.mb-4(src='@/assets/curso/tema2-4-tarj2.png', alt='RGB')
+          h3.text-center RGB 
+      .col-md-4.mb-4.img-3
+        .tarjeta.bg-acento-botones.p-4
+          img.px-md-5.mb-4(src='@/assets/curso/tema2-4-tarj3.png', alt='Pantone')
+          h3.text-center Pantone 
+
+    p(data-aos="fade") Estos perfiles deberán tener condiciones como el tipo de papel o tipo de tinta, dado que la calidad de gamas de color o saturación no se contemplará igual en un papel mate. La mayoría de los controladores de impresión llevan diferentes perfiles de color incorporados, lo que dará posibilidad de pruebas, al momento de seleccionar el perfil apropiado. Los documentos sin perfiles asignados se denominan sin etiqueta y solo contienen los valores de color en bruto. Al trabajar con documentos sin etiqueta, las aplicaciones utilizan el perfil del espacio de trabajo activo para mostrar y modificar los colores.
+
+    p(data-aos="fade") De otra parte, está el 
+      span.etiqueta Pantone
+      |  que es un sistema de identificación y comparación del color, comercialmente se conocen como colores sólidos o tintas planas, es una creación en tinta y se identifican con una referencia numérica propia a nivel mundial para que en cualquier imprenta puedan ser identificados. Este perfil de salida es especial para la producción gráfica e ideal para impresiones como logotipos, empaques y envases.
+
+    Separador
+
+
+    // 2.5
+    #t_2_5.titulo-segundo.color-acento-contenido(data-aos="fade-right")
+      .h2 2.5   Perfiles de visualización
+
+    .row
+      .col-md-5.mb-4(data-aos="fade-right")
+        img.mb-2(src='@/assets/curso/tema2-5-img.png', alt='Imagen decorativa')
+      .col-md-7.mb-4(data-aos="fade-left")
+        p Los perfiles de visualización se establecen para la correcta visualización en los dispositivos donde se establezcan las características de gestión de color y se hagan las conversiones posibles, para que tanto los dispositivos de entrada como de salida, puedan mantener un mismo lenguaje. 
+        p La gestión de color para la visualización en pantallas es diferente a la gestión de medios impresos, usualmente en los programas de diseño como adobe Photoshop, al momento de importar una imagen al programa, se abre una ventana con la información de la imagen que se va a visualizar. En el siguiente ejemplo se observa como Photoshop está informando que el documento no tiene ningún perfil RGB incrustado; y a su vez informa que se desea hacer como lo muestra la imagen. En este caso se puede asignar el perfil que se desee a criterio según el producto a realizar.
+
+    p.mb-4(data-aos="fade") A continuación, se describen algunas de las visualizaciones con dicho ejemplo:     
+
+    .tarjeta.bg-acento-botones.p-4
+      LineaTiempoC.color-acento-contenido(text-small)
+        .row.justify-content-center(titulo="A")
+          .col-md-5.mb-4.mb-md-0
+            p El perfil de entrada describe los espacios de color del dispositivo de entrada y del documento, desde una composición de colores RGB.
+          .col-md-5
+            figure
+              img(src='@/assets/curso/tema2-5-slide1.png', alt='Texto que describa la imagen')
+        .row.justify-content-center(titulo="B")
+          .col-md-5.mb-4.mb-md-0
+            p Mediante las descripciones de los perfiles, el sistema de gestión de color identifica los colores reales del documento.
+          .col-md-5
+            figure
+              img(src='@/assets/curso/tema2-5-slide1.png', alt='Texto que describa la imagen')  
+        .row.justify-content-center(titulo="C")
+          .col-md-5.mb-4.mb-md-0
+            p El perfil de visualización indica al sistema de gestión de color cómo convertir los valores numéricos del documento en el espacio de color del monitor.
+          .col-md-5
+            figure
+              img(src='@/assets/curso/tema2-5-slide1.png', alt='Texto que describa la imagen')  
+        .row.justify-content-center(titulo="D")
+          .col-md-5.mb-4.mb-md-0
+            p Mediante el perfil de salida, el sistema de gestión de color convierte los valores numéricos del documento en los valores de color del dispositivo de salida para que se imprima el aspecto correcto. 
+          .col-md-5
+            figure
+              img(src='@/assets/curso/tema2-5-slide1.png', alt='Texto que describa la imagen')                  
+
+    Separador
+
+
+    // 2.6
+    #t_2_6.titulo-segundo.color-acento-contenido(data-aos="fade-right")
+      .h2 2.6   Perfiles de color <em>gamut</em> 
+
+    p.mb-4(data-aos="fade") 
+      span.etiqueta <em>Gamut</em> significa gama de colores y lo entendemos como el conjunto de colores que pueden ser representados por un dispositivo determinado.
+      |  Si se piensa, con fines didácticos, que el ojo humano es un dispositivo, su <em>gamut</em> sería la referencia universal o el espacio de color absoluto, o el <em>gamut</em> universal absoluto. Pero los dispositivos como las pantallas, escáner, impresoras, máquinas fotográficas, etc., no son capaces de representar el espacio de color absoluto, así que tiene sus propios <em>gamut</em> definidos dentro del espacio universal. Incluso dos dispositivos iguales, como por ejemplo dos pantallas del mismo modelo, pueden tener <em>gamut</em> distintos.
+      
+    .row
+      .col-md-7.mb-4(data-aos="fade-right")
+        .cajon.color-primario.p-4.mb-4 
+          p.mb-0 Por ejemplo, los perfiles de color gamut hacen entender por qué en ciertas ocasiones se tiene una imagen en el monitor del computador la cual luce muy bien; sin embargo, al hacer la impresión de esta, los colores suelen distorsionarse, se generan mayores luces o sombras en partes que se veían muy bien en la imagen, no hay correlación entre lo que se ve y lo que se imprime.
+        p Para entender un poco más este concepto es necesario profundizar en 
+          strong la colorimetría, la cual es una ciencia que trata de medir y cuantificar los colores mediante números para operar con ellos y deducir características de los colores obtenidos mediante mezclas a partir de tres colores considerados como primarios. 
+          | Permite saber la cantidad de color primario que hay que mezclar para obtener otros. La colorimetría estudia aspectos físicos del color como la longitud de onda dominante (tono), pureza de la excitación (saturación) y luminancia (brillo de los cuerpos que emiten luz y claridad de los cuerpos que reflejan la luz) y las transforma en coordenadas que representan en el diagrama cualquier color visible.
+      .col-md-5.mb-4(data-aos="fade-left")
+        img(src='@/assets/curso/tema2-6-img.png', alt='Imagen decorativa')
+
+    p.mb-4(data-aos="fade") La importancia del diagrama es que representa todos los colores que se pueden ver, así que cualquier color generado por los diversos aparatos (pantallas, escáner, impresoras, máquinas fotográficas, celulares, etc.) se pueden calcular en este.
+
+    .row.justify-content-center
+      .col-md-7.bg-suave.p-md-4.p-3.mb-2
+        h2.text-center Diagrama
+        figure
+          img.px-md-5(src='@/assets/curso/tema2-6-infog.png', alt='Diagrama')
+      .col-md-7.bg-color-primario2
+        figcaption Nota. Tomado de www.aulapc.es/dibujo_imagen_gamut.html 
+
+    Separador
+
+
+    // 2.7
+    #t_2_7.titulo-segundo.color-acento-contenido(data-aos="fade-right")
+      .h2 2.7   Muestras Pantone y aplicación 
+
+    .row
+      .col-md-7.mb-4(data-aos="fade-right")
+        p Los colores Pantone a diferencia del modelo de color CMYK, se aplican de manera directa, mientras en CMKY, se tienen que realizar mezclas de color para generar diversos tonos. Pantone tiene en su catálogo <b>1114 colores</b> realizados mezclando 13 pigmentos diferentes (más el negro).
+        p Las tiras de color o muestrarios con los que cuentan las cartas de color Pantone (pantoneras), se asemejan a las cartas que encontramos en los almacenes de pintura, estos permiten al diseñador tener colores exactos o colores que se ajustan a cierto tipo de diseño o producto, que no se encuentran dentro del modelo CMYK, por lo cual, a la hora de imprimir este tipo de tintas, presentan muchas ventajas.
+        p Los códigos con los que se designa cada color permiten una estandarización universal; por ejemplo, el color 
+          strong <em>Blueberry</em> Pantone P102-16 C, 
+          | es el mismo aquí o en la China, lo cual permite que se pueda imprimir la misma pieza, color y calidad en cualquier parte del mundo, lo cual no necesariamente sucede con CMYK, ya que depende de muchos factores externos. Anualmente Pantone da a conocer uno o varios colores que van a ser tendencia durante este periodo de tiempo, los cuales son utilizados en diversos campos del diseño, la moda y la industria de alimentos especialmente.   
+      .col-md-5.mb-4(data-aos="fade-left")
+        img(src='@/assets/curso/tema2-7-img.png', alt='Imagen decorativa')
+
+
+    .titulo-tercero.titulo-tercero__2.mb-4(data-aos="fade-right")
+      h3.mb-0 Aplicación 
+      img(src='@/assets/curso/titulo-tercero.svg', alt='Imagen decorativa')
+
+    .row.justify-content-center(data-aos="fade-down")
+      .col-md-10.mb-4 
+        .cajon.color-primario.p-4
+          p.mb-0 La aplicación de los colores <b>Pantone</b> puede ser un verdadero problema para pequeños impresores, ya que sus tintas se basan en combinaciones exactas de diferentes pigmentos y adquirirlas puede sobrepasar los costos permitidos, incluso muchas industrias grandes preparan sus propios colores, utilizando las fórmulas de Pantone, con base en el modo de tintas CMYK. El tema principal con Pantone es que su base no está creada a partir de CMYK, lo cual hace que se tengan muchas más muestras de color y algunos colores que por sus características no pueden ser preparados con base en mezclas en CMYK. 
+
+    .row
+      .col-md-7.mb-4(data-aos="fade-right")
+        p Uno de los principales problemas por parte de impresores y diseñadores es escoger tintas Pantone en la pantonera, (se conoce como pantonera a la muestra física que tiene cada tirilla con su color y referencia) sin antes revisar si se pueden representar en CMYK, ya que su costo puede incrementar el presupuesto de impresión. 
+        p La aplicación de los colores Pantone puede ser un verdadero problema para pequeños impresores, ya que sus tintas se basan en combinaciones exactas de diferentes pigmentos y adquirirlas puede sobrepasar los costos permitidos, incluso muchas industrias grandes preparan sus propios colores, utilizando las fórmulas de Pantone, con base en el modo de tintas CMYK. 
+          strong El tema principal con Pantone es que su base no está creada a partir de CMYK, lo cual hace que se tengan muchas más muestras de color y algunos colores que por sus características no pueden ser preparados con base en mezclas en CMYK. 
+      .col-md-5.mb-4(data-aos="fade-left")
+        img(src='@/assets/curso/tema2-7-img2.png', alt='Imagen decorativa')
+    
+    Separador
+
+
+    // 2.8
+    #t_2_8.titulo-segundo.color-acento-contenido(data-aos="fade-right")
+      .h2 2.8   Valor tonal, equilibrio, grises y densidad
+
+    p.mb-4(data-aos="fade") El valor tonal es la cantidad de luz y sombra que puede reflejar una superficie, estas producen las luces y sombras de la escala de grises que van de mezclas básicas entre el blanco y el negro, teniendo entre 10, 20 o más valores tonales entre ambos colores. Veamos con mayor profundidad este tema:
+
+
+
+
+    p.mb-4(data-aos="fade") A continuación se identifican los distintos tipos de tramados que existen para la impresión, esto es:
+
+    h2.text-center.text-white.bg-acento-contenido.py-2 Tramado de la impresión
+
+    TabsC.color-acento-botones
+      .py-3.py-md-4(titulo="Monocromático")
+        .row.justify-content-center
+          .col-md-5.mb-4.mb-md-0
+            figure
+              img(src='@/assets/curso/tema2-8-pest2.png', alt='Monocromático')
+          .col-md-5
+            h4 El tramado monocromático tradicional
+            p Hace énfasis en un tramado usual, los puntos se ubican siempre a la misma distancia los unos de los otros, lo que se modifica es la amplitud del punto, es decir, su tamaño.
+            p Cuando el punto sea más amplio, se marcará con más fuerza el color, cuando el punto disminuye el color se observará bastante degradado; es importante mencionar que el tamaño de los puntos se da en micrones, es decir solo se verá una variación del degrado.
+      .py-3.py-md-4(titulo="Estocástico")
+        .row.justify-content-center
+          .col-md-5.mb-4.mb-md-0
+            figure
+              img(src='@/assets/curso/tema2-8-pest1.png', alt='Estocástico')
+          .col-md-5
+            h4 El tramado estocástico
+            p Significa (aleatorio), los puntos están situados con mayor periodicidad sin seguir un esquema preestablecido. De tal manera que el degradado es mucho más natural y de mejor calidad. No varía el volumen de los puntos, pero si la frecuencia en el espacio ya que los puntos son más habituales, permite tener un color mucho más marcado, y donde los puntos se vean escasos terminan degradándose hasta el color blanco.  
+      .py-3.py-md-4(titulo="Efecto muaré")
+        .row.justify-content-center
+          .col-md-5.mb-4.mb-md-0
+            figure
+              img(src='@/assets/curso/tema2-8-pest3.png', alt='Efecto muaré')
+          .col-md-5
+            h4 El color y el efecto muaré
+            p La impresión por lo general se da en cuatro colores (amarillo, cian, magenta y negro) permitiendo crear el color deseado, se debe tener en cuenta que los colores no se combinan entre sí, por el contrario, se imprimen puntos, unos junto a otros, en los cuatro colores principales, las tramas ajustan el tamaño y la densidad de los puntos incorporando los cuatro colores.      
+
+    Separador
+
+
+    // 2.9
+    #t_2_9.titulo-segundo.color-acento-contenido(data-aos="fade-right")
+      .h2 2.9   Incremento de valor tonal
+
+    p.mb-4(data-aos="fade") Se denomina como 
+      span.etiqueta el incremento o aumento de la cantidad de punto de trama debido a la impresión,
+      |  por esta razón cualquier tipo de imagen puede aparecer con el color más oscuro y se puede producir un desplazamiento de color. En artes gráficas se puede medir las curvas de valor tonal en diferentes tipos de color como los primarios, especiales o mixtos. Este valor tonal se calcula aproximadamente en un rango de medios tonos del 40 % y un rango de sombras estimado en el 80 %. 
+
+    .row.justify-content-center(data-aos="fade-down")
+      .col-md-8.mb-4   
+        .cajon3.color-acento-botones.personalizado.px-md-5.py-md-0.p-4
+          .bloque-texto-b__texto
+            h4.mb-0 Un ejemplo puede ser: si se mide una impresión con un densímetro en el 80 % de trama y se obtiene el valor de 90 %, la ganancia de punto es 10 %. No quiere decir que el punto en el 80 % aumentó un 10 %, siendo así se obtendría el 88 % puesto que el 10 % de 80 es 8.
+
+    p.mb-4(data-aos="fade") Lo que se explica en el ejemplo es la medición de ganancia de punto, donde el valor en plancha que era 80 % de trama, en el impreso es de 90 % de trama; dicho de otra forma, incrementó el valor tonal de 80 % a un 90 %, indicando que incrementó en diez 10 el valor tonal. En resumen, se puede decir que el valor porcentual de la ganancia de punto hace referencia a cuántos pasos tonales aumenta el punto. Es importante que las impresoras de plancha se encuentren óptimas en su calibración, así el valor del punto sea el que verdaderamente corresponda. Veamos:
+
+    .row.justify-content-center.mb-5(data-aos="fade-down")
+      .col-md-6
+        SlyderF(columnas="col-12")
+          .tarjeta.color-secundario.p-4
+            img.mb-5(src='@/assets/curso/tema2-9-tarj1.jpg' alt='Línea característica de impresión')
+            h2.mb-5.text-center Línea característica de impresión
+            p.text-center Esta línea es una representación gráfica, entre los cubrimientos superficiales en porcentaje de trama en la impresión y en la película o en el bloque de datos. La línea ideal forma un ángulo de 45°, sin embargo, depende de factores como la calidad del papel, el color de la impresión a realizar y la maquina en la cual se va a realizar dicha impresión.
+          .tarjeta.color-acento-botones.p-4
+            img.mb-5(src='@/assets/curso/tema2-9-tarj2.png' alt='Tabla de valores')
+            h2.mb-5.text-center Tabla de valores
+            p.text-center La tabla de valores se puede mostrar si arrastra hacia arriba la barra horizontal que se encuentra debajo de la representación de las curvas. Al hacer esto se reduce la representación de las curvas. En la tabla de colores siempre se muestran todos los colores, independientemente de la selección de curvas en la lista “Representación”. El área visible se puede desplazar con las barras de desplaza­miento.
+
 </template>
 
 <script>
