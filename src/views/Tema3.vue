@@ -70,8 +70,12 @@
 </template>
 
 <script>
+import BotonesB from '../components/BotonesB.vue'
 export default {
   name: 'Tema3',
+  components: {
+    BotonesB,
+  },
   data: () => ({
     // variables de vue
   }),
