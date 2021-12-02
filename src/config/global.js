@@ -116,15 +116,15 @@ export default {
         titulo: 'Aplicación de normas técnicas',
         desarrolloContenidos: true,
       },
+    ],
+    subMenu: [
       {
         nombreRuta: 'sintesis',
-        icono: 'far fa-file-alt',
+        icono: 'fas fa-sitemap',
         numero: '',
         titulo: 'Síntesis',
         desarrolloContenidos: true,
       },
-    ],
-    subMenu: [
       {
         nombreRuta: 'actividad',
         icono: 'far fa-question-circle',
@@ -359,7 +359,7 @@ export default {
           'Centro Industrial del Diseño y la Manufactura <br>Regional Santander',
       },
       {
-        nombre: ' ',
+        nombre: 'Yenny Patricia Ulloa Villamizar',
         cargo: 'Validación de diseño y contenido',
         centro:
           'Centro Industrial del Diseño y la Manufactura <br>Regional Santander',

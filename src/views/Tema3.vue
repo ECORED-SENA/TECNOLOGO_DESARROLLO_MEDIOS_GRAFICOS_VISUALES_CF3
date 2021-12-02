@@ -14,8 +14,10 @@
           span.etiqueta ISO 12647,
           |  esta norma posee distintas variantes en función del sistema de impresión que se vaya a utilizar, sea offset, tipográfica, en plano o rotativa, serigrafía, huecograbado, etc. Permiten establecer la colorimetría de las tintas con la finalidad de normalizar; es decir, obtener los mismos resultados al momento de tener una prueba digital como una impresión en una o en otra máquina, la norma distingue entre cinco tipos de papel entre los que encontramos estucados, brillantes, mates, blancos y diferentes gramados. 
       .col-md-5.mb-4(data-aos="fade-left")
-        img(src='@/assets/curso/tema3-img.png', alt='Imagen decorativa')
+        img.mb-2(src='@/assets/curso/tema3-img.png', alt='Imagen decorativa')
+        figcaption Fuente: https://pixabay.com/es/photos/revistas-revista-periodismo-prensa-614897/
 
+    p(data-aos="fade") Se deben establecer valores colorimétricos que miden calidades de blancos, brillos y las tolerancias que dan como resultados coordenados de color para sus cuatricromías y sus tipificaciones de papel, esto con el ánimo de acelerar procesos y evitar errores y contratiempos al momento de la elaboración de un producto. Para que todas estas normas se puedan implementar, es necesario tener unas condiciones estables y que los elementos como las tintas y los soportes tengan las características establecidas. 
     p.mb-4(data-aos="fade") <b>La norma ISO</b> especifica el valor y tolerancia de las características visuales que contiene el impreso. Entre los elementos más relevantes que se deben tener en cuenta para la aplicación de la norma están los siguientes parámetros:
 
     .row(data-aos="fade-down") 

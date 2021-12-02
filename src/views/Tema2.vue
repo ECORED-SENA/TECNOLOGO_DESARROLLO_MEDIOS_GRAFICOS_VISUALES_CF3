@@ -11,7 +11,7 @@
     figure.mb-4
       img(src='@/assets/curso/tema2-banner.png', alt='Control de calidad de impresos ')
     
-    .row
+    .row.mb-5.mb-md-0
       .col-md-7.mb-4(data-aos="fade-right")
         p El control de calidad se puede definir como  
           span.etiqueta diseñar y desarrollar productos y servicios con la mejor calidad al menor costo que se pueda conseguir.
@@ -35,10 +35,10 @@
                     p.mb-0 <b>12647-1</b> Parámetros y métodos de medición
                   li.mb-0
                     i.fas.fa-chevron-right
-                    p.mb-0 <b>12647-2</b> Offset plano y con horno
+                    p.mb-0 <b>12647-2</b> <em>Offset</em> plano y con horno
                   li.mb-0
                     i.fas.fa-chevron-right
-                    p.mb-0 <b>12647-3</b> Coldset y periódicos
+                    p.mb-0 <b>12647-3</b> <em>Coldset</em> y periódicos
                   li.mb-0
                     i.fas.fa-chevron-right
                     p.mb-0 <b>12647-4</b> Huecograbado
@@ -77,8 +77,37 @@
             h1 Modo <em>online</em>
             p  Para un control de calidad en tiempo real a gran velocidad empleando cámaras lineales. 
 
-    p(data-aos="fade") Se han diseñado e implantado sistemas apoyados en visión artificial para la localización ágil y en línea de producción de los posibles defectos de una impresión. Dichos procesos de inspección permiten descubrir los defectos de calidad de impresión en un lapso real de tiempo, estos errores se exponen y se registran, permitiendo que un operador encuentre la ubicación exacta de la falla. Si se presenta un episodio crítico se podrá automatizar la impresión haciendo que el proceso se detenga en la línea. El sistema cuenta con una configuración con las siguientes características:
-
+    .row
+      .col-md-7.mb-3(data-aos="fade-right")
+        p(data-aos="fade") Se han diseñado e implantado sistemas apoyados en visión artificial para la localización ágil y en línea de producción de los posibles defectos de una impresión. Dichos procesos de inspección permiten descubrir los defectos de calidad de impresión en un lapso real de tiempo, estos errores se exponen y se registran, permitiendo que un operador encuentre la ubicación exacta de la falla. Si se presenta un episodio crítico se podrá automatizar la impresión haciendo que el proceso se detenga en la línea. El sistema cuenta con una configuración con las siguientes características:
+      .col-md-5(data-aos="fade-left")
+        .cajon.color-acento-botones.p-4.mb-4
+          ul.lista-ul--color.mb-0
+            li.mb-0
+              i.fas.fa-chevron-right
+              | Velocidad de impresión (150-300 m/min)
+            li.mb-0
+              i.fas.fa-chevron-right
+              | Anchos de inspección (hasta 1500 mm)
+            li.mb-0
+              i.fas.fa-chevron-right
+              | Niveles de calidad
+            li.mb-0
+              i.fas.fa-chevron-right
+              | Control de alineamiento
+            li.mb-0
+              i.fas.fa-chevron-right
+              | Tamaño y tipología de defecto
+            li.mb-0
+              i.fas.fa-chevron-right
+              | Control de densidad
+            li.mb-0
+              i.fas.fa-chevron-right
+              | Desviaciones de color/tono
+            li.mb-0
+              i.fas.fa-chevron-right
+              | Control de posición              
+        
     Separador
 
 
@@ -323,19 +352,22 @@
       strong.etiqueta RGB o CMYK,
       |  donde se asignará al documento con condiciones de impresión determinadas para cada perfil. 
 
-    .row.tarjetas2-4
-      .col-md-4.mb-4
+    .row.tarjetas2-4.mb-4
+      .col-md-4.mb-md-2.mb-4
         .tarjeta.bg-acento-botones.p-4
           img.px-md-5.mb-4(src='@/assets/curso/tema2-4-tarj1.png', alt='CMYK')
           h3.text-center CMYK
-      .col-md-4.mb-4
+      .col-md-4.mb-md-2.mb-4
         .tarjeta.bg-acento-botones.p-4
           img.px-md-5.mb-4(src='@/assets/curso/tema2-4-tarj2.png', alt='RGB')
           h3.text-center RGB 
-      .col-md-4.mb-4.img-3
+      .col-md-4.mb-md-2.mb-4.img-3
         .tarjeta.bg-acento-botones.p-4
           img.px-md-5.mb-4(src='@/assets/curso/tema2-4-tarj3.png', alt='Pantone')
           h3.text-center Pantone 
+      .col-md-12
+        figcaption Fuente: https://www.dikaestudio.com/wp-content/uploads/2018/01/Imagen-03.jpg 
+
 
     p(data-aos="fade") Estos perfiles deberán tener condiciones como el tipo de papel o tipo de tinta, dado que la calidad de gamas de color o saturación no se contemplará igual en un papel mate. La mayoría de los controladores de impresión llevan diferentes perfiles de color incorporados, lo que dará posibilidad de pruebas, al momento de seleccionar el perfil apropiado. Los documentos sin perfiles asignados se denominan sin etiqueta y solo contienen los valores de color en bruto. Al trabajar con documentos sin etiqueta, las aplicaciones utilizan el perfil del espacio de trabajo activo para mostrar y modificar los colores.
 
@@ -435,7 +467,7 @@
         img(src='@/assets/curso/tema2-7-img.png', alt='Imagen decorativa')
 
 
-    .titulo-tercero.titulo-tercero__2.mb-4(data-aos="fade-right")
+    .titulo-tercero.titulo-tercero__5.mb-4(data-aos="fade-right")
       h3.mb-0 Aplicación 
       img(src='@/assets/curso/titulo-tercero.svg', alt='Imagen decorativa')
 
@@ -450,7 +482,7 @@
         p La aplicación de los colores Pantone puede ser un verdadero problema para pequeños impresores, ya que sus tintas se basan en combinaciones exactas de diferentes pigmentos y adquirirlas puede sobrepasar los costos permitidos, incluso muchas industrias grandes preparan sus propios colores, utilizando las fórmulas de Pantone, con base en el modo de tintas CMYK. 
           strong El tema principal con Pantone es que su base no está creada a partir de CMYK, lo cual hace que se tengan muchas más muestras de color y algunos colores que por sus características no pueden ser preparados con base en mezclas en CMYK. 
       .col-md-5.mb-4(data-aos="fade-left")
-        img(src='@/assets/curso/tema2-7-img2.png', alt='Imagen decorativa')
+        img(src='@/assets/curso/tema2-7-img2.svg', alt='Imagen decorativa')
     
     Separador
 
@@ -506,8 +538,8 @@
       .row.bg-suave.justify-content-center.p-4(x="83%" y="50%" tooltip="Clic para ver más" numero="4")
         .col-md-12
           h4 Tramado de imágenes
-          p Es necesario tener un entorno cromático neutro, que cuente con una iluminación estándar con luz día para poder medir el balance de grises. Si no se cuenta con estos elementos, se producen efectos de metamerismo, que consiste en la percepción de las variaciones del color por parte del observador, según el color que rodee la muestra que se visualiza, o según el iluminante usado o los contrastes utilizados.
         .col-md-6
+          p Existen aspectos importantes que utilizan las tecnologías actuales que reproducen la fotografía en soportes impresos.
           p Si observa una fotografía hecha en material fotográfico tradicional, podrá ver una imagen uniforme a pesar de que se examine detalladamente, pero si necesita reproducirla en un impreso, es imprescindible convertirla en un entramado de puntos diminutos, que no pueden verse a cierta distancia, pero generan en quien la observa una sensación de matices respecto al original. Al observar detenidamente los puntos del entramado diminuto, se puede inferir que en la mayor parte hay cuatro colores determinados, como son el amarillo, el negro, el magenta y el cian. Este proceso que va de la imagen fotográfica a la imagen impresa requiere dos procesos técnicos definidos que son:
         .col-md-6
           img(src='@/assets/curso/tema2-8-modal4.svg', alt='Imagen decorativa')  

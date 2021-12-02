@@ -16,7 +16,7 @@
       |  gestionar este proceso garantiza la exactitud de reproducción en los dispositivos, como por ejemplo una pantalla (pc), impresoras, técnica de impresión offset, entre otros. La gestión de color es un desafío en las artes gráficas y en el diseño digital, uno de los problemas más comunes que se presenta en los procesos de producción gráfica es no realizar el proceso de gestión de color adecuado y por consiguiente los resultados finales son negativos. Lo invitamos a conocer más acerca del maravilloso mundo de la gestión del color.
 
     .row.bg-elemento.justify-content-center.py-3.align-items-end(data-aos="fade-down") 
-      .col-md-2.col-5.mb-4.mb-md-0
+      .col-md-2.col-4.mb-4.mb-md-0
         img.px-md-4(src='@/assets/curso/tema1-ico.svg', alt='Icono decorativo')
       .col-md-8
         .row.align-items-center
@@ -57,38 +57,42 @@
 
     p.mb-4(data-aos="fade") En la imagen que se expone a continuación, se observa la misma imagen tres veces, <b>sin una gestión de color adecuada</b>, lo cual hace que se vean diferentes las tonalidades en las tres imágenes:
 
-    .row
+    .row.mb-4
       h2.text-center Imagen sin gestión de color
-      .col-md-4.mb-4
+      .col-md-4.mb-md-2.mb-4
         .tarjeta.bg-acento-botones.p-4
           img.mb-4(src='@/assets/curso/tema1-1-imgA.jpg', alt='Original')
           h3.text-center Original
-      .col-md-4.mb-4
+      .col-md-4.mb-md-2.mb-4
         .tarjeta.bg-acento-botones.p-4
           img.mb-4(src='@/assets/curso/tema1-1-imgB.jpg', alt='En un monitor ')
           h3.text-center En un monitor 
-      .col-md-4.mb-4
+      .col-md-4.mb-md-2.mb-4
         .tarjeta.bg-acento-botones.p-4
           img.mb-4(src='@/assets/curso/tema1-1-imgC.jpg', alt='Impresa')
           h3.text-center Impresa 
-    
+      .col-md-12
+        figcaption Fuente: https://lh3.googleusercontent.com/proxy/qDeZWsGVBSdOylJfDM4UnJzaMW-A6ZfYtiZmct5HRGi2A-7e_NuoF9aGJR7h9AyKIyCu3pe6gcrs6KkTD6FETp7l
+
     p.mb-4(data-aos="fade") En el siguiente ejemplo como en la anterior imagen, se observa la misma imagen tres veces, pero ahora <b>con gestión de color: original, en monitor e impresa;</b> analizando como el color es uniforme en las tres imágenes:
 
-    .row
+    .row.mb-4
       h2.text-center Imagen con gestión de color
-      .col-md-4.mb-4
+      .col-md-4.mb-md-2.mb-4
         .tarjeta.bg-acento-botones.p-4
           img.mb-4(src='@/assets/curso/tema1-1-img2A.jpg', alt='Original')
           h3.text-center Original
-      .col-md-4.mb-4
+      .col-md-4.mb-md-2.mb-4
         .tarjeta.bg-acento-botones.p-4
           img.mb-4(src='@/assets/curso/tema1-1-img2B.jpg', alt='En un monitor ')
           h3.text-center En un monitor 
-      .col-md-4.mb-4
+      .col-md-4.mb-md-2.mb-4
         .tarjeta.bg-acento-botones.p-4
           img.mb-4(src='@/assets/curso/tema1-1-img2C.jpg', alt='Impresa')
           h3.text-center Impresa 
-    
+      .col-md-12
+        figcaption Fuente: https://lh3.googleusercontent.com/proxy/4AKZ6KfNqPLoIbuMP894XLez8Y5onLVOfj3aBl8k733nsetjhH5q7De1dVanr8gw4cFDw-GK_yqJs036svaKxM7l
+
     p.mb-5(data-aos="fade") Analizando los dos ejemplos anteriores, se define una de las características más importantes a la hora de aplicar la gestión de color en las imágenes previas a su impresión, teniendo en cuenta que los recursos tecnológicos hoy en día permiten realizar previamente los ajustes de color que se deseen aplicar en una imagen. 
 
   
@@ -242,7 +246,7 @@
         .row.justify-content-center
           .col-md-5.mb-4.mb-md-0
             h4 RGB
-            p (millones de colores), es un modelo basado en la síntesis de color aditiva, lo cual significa que por medio de adición de luz (roja, verde y azul), se generan los diferentes colores que al ser  sobrexpuestos generan el color blanco. Este tipo de modelo es utilizado en pantallas, proyectores, monitores, es por eso que el monitor del computador debe estar bien calibrado, pues de esto dependerá entre otras cosas, que el color de cualquier producto final sea el requerido. 
+            p (Millones de colores), es un modelo basado en la síntesis de color aditiva, lo cual significa que por medio de adición de luz (roja, verde y azul), se generan los diferentes colores que al ser  sobrexpuestos generan el color blanco. Este tipo de modelo es utilizado en pantallas, proyectores, monitores, es por eso que el monitor del computador debe estar bien calibrado, pues de esto dependerá entre otras cosas, que el color de cualquier producto final sea el requerido. 
             p Cabe mencionar que los colores utilizados en impresión del modelo (CMYK), se ven totalmente diferentes a los que se observan en la pantalla de su computador (RGB), por tal razón es muy importante convertir los archivos. 
           .col-md-5
             figure
@@ -250,13 +254,13 @@
         .row.justify-content-center
           .col-md-5.mb-4.mb-md-0
             h4 LAB
-            p el modo de color LAB, se basa en la medida del componente lumínico que es medido de 0 a 100. Este modo de color es el que más se aproxima a la percepción visual, el color Lab consta de un componente de luminancia o luminosidad (L) y dos componentes cromáticos, el componente a (del verde al rojo) y el componente b (del azul al amarillo). Modelo Lab. A. Luminancia=100 (blanco) B. Componente verde a rojo C. Componente azul a amarillo D. Luminancia=0 (negro).
+            p El modo de color LAB, se basa en la medida del componente lumínico que es medido de 0 a 100. Este modo de color es el que más se aproxima a la percepción visual, el color Lab consta de un componente de luminancia o luminosidad (L) y dos componentes cromáticos, el componente a (del verde al rojo) y el componente b (del azul al amarillo). Modelo Lab. A. Luminancia=100 (blanco) B. Componente verde a rojo C. Componente azul a amarillo D. Luminancia=0 (negro).
           .col-md-5
             figure
               img(src='@/assets/curso/tema1-3-slide4.jpg', alt='LAB')                
 
     .row.bg-elemento.justify-content-center.py-2.align-items-end.mb-5(data-aos="fade-down") 
-      .col-lg-2.col-md-3.col-5.mb-4.mb-md-0
+      .col-lg-2.col-md-3.col-4.mb-4.mb-md-0
         img.px-md-3(src='@/assets/curso/tema1-3-ico.svg', alt='Icono decorativo')
       .col-lg-8.col-md-9
         .row.align-items-center

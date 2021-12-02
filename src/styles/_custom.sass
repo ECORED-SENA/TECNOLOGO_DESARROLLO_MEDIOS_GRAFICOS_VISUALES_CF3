@@ -182,12 +182,33 @@ figcaption
   border-radius: 50%
   padding: 6px 10px
 
-
-.tarjetas2-4 img
-  height: 165px
-  width: fit-content
-  margin: 0 auto
-  display: block
+@media (min-width: $bp-min-xxl)
+  .tarjetas2-4 .img-3 img
+    height: 218px
+    margin: 0 auto
+    display: block
+    width: fit-content
+@media (min-width: $bp-min-xl) and (max-width: $bp-max-xl) 
+  .tarjetas2-4 .img-3 img
+    height: 165px
+    margin: 0 auto
+    display: block
+    width: fit-content
+@media (max-width: $bp-max-lg)      
+  .tarjetas2-4 img
+    height: 113px
+    margin: 0 auto
+    display: block
+    width: fit-content
+@media (max-width: $bp-max-md)      
+  .tarjetas2-4 img
+    height: 43px
+    margin: 0 auto
+    display: block
+    width: fit-content    
+@media (max-width: $bp-max-sm)   
+  .tarjetas2-4 img
+    height: auto
 
 
 .linea-tiempo-c__header__btn, .linea-tiempo-c__header__btn--left, .linea-tiempo-c__header__btn--right, .pasos-b__header__btn--left, .pasos-b__header__btn--right
@@ -233,3 +254,11 @@ figcaption
 @media (max-width: $bp-max-md)
   .bg-elemento
     background-color: #fff3bf
+
+@media (max-width: $bp-max-sm) 
+  .slyder-a__btn--sigt, .slyder-a__btn--atrs
+    top: 60%
+  .slyder-a__tipo-a .slyder-a__btn--atrs
+    left: 0px
+  .slyder-a__tipo-a .slyder-a__btn--sigt
+    right: 0px    
