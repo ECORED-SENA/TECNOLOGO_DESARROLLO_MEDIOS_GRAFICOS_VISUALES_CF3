@@ -24,7 +24,7 @@
             h4.mb-md-1 Gestión de color
             p.mb-0 A continuación, observe el video <b>Gestión de color</b>, para tener una mayor contextualización de este tema, sus elementos, características, modelos, entre otros.
           .col-md-1
-            a.boton.color-acento-botones.me-3(:href="obtenerLink('/downloads/Orden_de_produccion.jpg')" target="_blank" type="application/pdf")
+            a.boton.color-acento-botones.me-3(href="https://www.youtube.com/watch?v=Gif1833CiaQ" target="_blank" type="application/pdf")
               span Descargar
               i.fas.fa-file-download
 
