@@ -312,7 +312,7 @@ export default {
           'Centro para la Industria de la Comunicación Gráfica <br>Regional Distrito Capital',
       },
       {
-        nombre: 'Gloria Amparo López escudero',
+        nombre: 'Gloria Amparo López Escudero',
         cargo: 'Diseñadora instruccional',
         centro: 'Centro de Gestión Industrial <br>Regional Distrito Capital',
       },

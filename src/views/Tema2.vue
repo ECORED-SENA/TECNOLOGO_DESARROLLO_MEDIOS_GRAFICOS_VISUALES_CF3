@@ -404,19 +404,19 @@
             p Mediante las descripciones de los perfiles, el sistema de gestión de color identifica los colores reales del documento.
           .col-md-5
             figure
-              img(src='@/assets/curso/tema2-5-slide1.png', alt='Texto que describa la imagen')  
+              img(src='@/assets/curso/tema2-5-slide2.png', alt='Texto que describa la imagen')  
         .row.justify-content-center(titulo="C")
           .col-md-5.mb-4.mb-md-0
             p El perfil de visualización indica al sistema de gestión de color cómo convertir los valores numéricos del documento en el espacio de color del monitor.
           .col-md-5
             figure
-              img(src='@/assets/curso/tema2-5-slide1.png', alt='Texto que describa la imagen')  
+              img(src='@/assets/curso/tema2-5-slide3.png', alt='Texto que describa la imagen')  
         .row.justify-content-center(titulo="D")
           .col-md-5.mb-4.mb-md-0
             p Mediante el perfil de salida, el sistema de gestión de color convierte los valores numéricos del documento en los valores de color del dispositivo de salida para que se imprima el aspecto correcto. 
           .col-md-5
             figure
-              img(src='@/assets/curso/tema2-5-slide1.png', alt='Texto que describa la imagen')                  
+              img(src='@/assets/curso/tema2-5-slide4.png', alt='Texto que describa la imagen')                  
 
     Separador
 

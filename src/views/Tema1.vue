@@ -25,8 +25,8 @@
             p.mb-0 A continuación, observe el video <b>Gestión de color</b>, para tener una mayor contextualización de este tema, sus elementos, características, modelos, entre otros.
           .col-md-1
             a.boton.color-acento-botones.me-3(href="https://www.youtube.com/watch?v=Gif1833CiaQ" target="_blank" type="application/pdf")
-              span Descargar
-              i.fas.fa-file-download
+              span Ver
+              i.fas.fa-play
 
     Separador
 
@@ -269,8 +269,8 @@
             p.mb-md-1 Para reforzar y profundizar sus conceptos en este tema, lo invitamos a ver el siguiente video, recuerde que también se encuentra disponible en el material complementario:
           .col-lg-1.col-md-1
             a.boton.color-acento-botones.me-3(href="https://www.youtube.com/watch?v=r_omt3DDwDU" target="_blank" type="application/pdf")
-              span Descargar
-              i.fas.fa-file-download 
+              span Ver
+              i.fas.fa-play
 
 
 
