@@ -95,8 +95,8 @@ export default {
         .banner-principal__img
           padding-right: 4rem!important
 
-  //&__img
-    animation: scale 5s ease-in-out infinite alternate
+  &__img
+    //animation: scale 5s ease-in-out infinite alternate
     @if $banner-principal-img-y == 'arriba'
       align-self: flex-start
       padding-bottom: 1.5rem
@@ -155,17 +155,17 @@ export default {
   &_6
     animation: scale 5s ease-in-out infinite alternate
     position: absolute
-    top: 18%
+    top: 25%
     right: 30%
   &_7
     animation: scale 5s ease-in-out infinite alternate
     position: absolute
-    top: 27%
+    top: 31%
     right: 2%
   &_8
     animation: scale 5s ease-in-out infinite alternate
     position: absolute
-    bottom: 10%
+    bottom: 13%
     right: 35%
 
 
@@ -184,14 +184,14 @@ export default {
 @media (min-width: $bp-min-xxl)
   .imagen_escalable
     &_6
-      top: 0%
-      right: 27%
-    &_7
       top: 26%
-      right: 6%
+      right: 31%
+    &_7
+      top: 36%
+      right: 5%
     &_8
-      bottom: 6%
-      right: 10%
+      bottom: 15%
+      right: 13%
 @media (max-width: $bp-max-md)
   .fondo-contenido
     display: none
